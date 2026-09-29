@@ -49,6 +49,11 @@ body[data-theme="day"] .wallpaper:before, body[data-theme="night"] .wallpaper:be
 @keyframes panelIn { from { opacity:0; transform:translateY(-14px); } to { opacity:1; transform:translateY(0); } }
 @keyframes appRise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
 @keyframes statusPulse { 0%,100% { filter:brightness(1); } 50% { filter:brightness(1.12); } }
+ .boot-console i { opacity:0; animation:bootLine .22s steps(2,end) forwards; }
+ .boot-console i:nth-child(1){animation-delay:.28s}.boot-console i:nth-child(2){animation-delay:.52s}.boot-console i:nth-child(3){animation-delay:.76s}.boot-console i:nth-child(4){animation-delay:1s}
+ .boot-console i:last-child::after { content:'_'; animation:bootCursor .8s steps(1,end) infinite; margin-left:2px; }
+ @keyframes bootLine { from{opacity:0;transform:translateX(-5px)} to{opacity:1;transform:translateX(0)} }
+ @keyframes bootCursor { 0%,49%{opacity:1}50%,100%{opacity:0} }
   .dock span { display:grid; place-items:center; margin:0; }
   .dock span img { width:34px; height:34px; object-fit:contain; image-rendering:pixelated; }
 @media (min-width: 901px) {
