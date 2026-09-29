@@ -1,6 +1,6 @@
 # Akhil Personal OS
 
-An interactive personal portfolio operating system for C. Yuva Akhil.
+An interactive retro-desktop personal portfolio operating system for C. Yuva Akhil, adapted from the owner-approved Open Portfolio OS template.
 
 ## Run locally
 
@@ -18,7 +18,7 @@ Edit `content/owner-profile.js` for identity, projects, links, and approved clai
 
 ## Asset notes
 
-The outdoor photograph is the primary portrait. The mirror and temple photographs are secondary editorial images. The approved generated companion uses the outdoor photograph as the primary likeness reference, with the four-view sheet as supporting facial reference. Do not replace or publish private source material without approval.
+The outdoor photograph is the primary real portrait. The mirror and temple photographs are secondary editorial images. The approved pixel avatar and walking sprite were generated with the outdoor photograph as the primary likeness reference and the four-view sheet as supporting facial reference. Template icon, wallpaper, and game assets are retained as licensed/owner-approved structural references; previous-owner identity assets are quarantined under `reference-only/` and ignored by Git.
 
 ## Claim integrity
 
