@@ -14,11 +14,11 @@ referenceLayout.textContent = `
 .dock-hoverable:not(.dock-visible) { bottom:-100px; opacity:0; pointer-events:none; }
 .dock small { position:absolute; left:50%; bottom:54px; transform:translateX(-50%) translateY(4px); opacity:0; pointer-events:none; padding:5px 6px; background:var(--ink); color:var(--paper); font:7px/1 var(--pixel); white-space:nowrap; transition:opacity .12s,transform .12s; }
 .dock button:hover small { opacity:1; transform:translateX(-50%) translateY(0); }
-.wallpaper { background-image:url('assets/wallpapers/akhil-room.png'); background-position:center; background-size:cover; animation:roomDrift 28s ease-in-out infinite alternate; filter:saturate(1.05) contrast(1.08); }
-.wallpaper video { display:none !important; }
+.wallpaper { background-image:linear-gradient(rgba(243,177,190,.2),rgba(243,177,190,.2)),url('assets/wallpapers/cotton-candy-dawn.jpg'); background-position:center; background-size:cover; animation:none; filter:saturate(1.02) contrast(1.04); }
+.wallpaper video { display:block !important; opacity:.66 !important; mix-blend-mode:multiply; }
 .wallpaper:after { background-image:linear-gradient(rgba(255,248,220,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,248,220,.09) 1px,transparent 1px); background-size:42px 42px; mix-blend-mode:screen; opacity:.38; }
 .wallpaper:before { content:''; position:absolute; inset:0; pointer-events:none; background:radial-gradient(circle at 77% 33%,rgba(255,190,105,.16),transparent 25%),linear-gradient(90deg,rgba(17,13,14,.16),transparent 58%,rgba(17,13,14,.1)); z-index:1; }
-body[data-theme="day"] .wallpaper:before, body[data-theme="night"] .wallpaper:before { background:linear-gradient(90deg,rgba(16,12,14,.38),rgba(16,12,14,.08) 58%,rgba(16,12,14,.16)),radial-gradient(circle at 77% 33%,rgba(255,190,105,.14),transparent 25%); }
+body[data-theme="day"] .wallpaper:before, body[data-theme="night"] .wallpaper:before { background:linear-gradient(90deg,rgba(255,248,220,.72),rgba(255,248,220,.43) 34%,rgba(255,248,220,.1) 66%,transparent 84%); }
 .wallpaper .grain { display:block; position:absolute; inset:0; z-index:2; pointer-events:none; opacity:.14; background-image:radial-gradient(rgba(255,248,220,.7) 1px,transparent 1px); background-size:83px 71px; animation:grainDrift 18s linear infinite; }
 .daily h1, .daily p, .daily .kicker, .daily .availability, .app-icon-card b, .app-icon-card small { text-rendering:geometricPrecision; }
 .daily h1 { text-shadow:1px 1px 0 var(--paper),-1px 0 0 var(--paper); }
@@ -27,7 +27,6 @@ body[data-theme="day"] .wallpaper:before, body[data-theme="night"] .wallpaper:be
 .app-icon-card:hover .app-icon img { filter:drop-shadow(5px 6px 0 color-mix(in srgb, var(--lime) 55%, var(--ink))); }
 .companion img { animation:companionFloat 3.8s ease-in-out infinite; transform-origin:center bottom; }
 .companion-status { animation:statusPulse 2.8s ease-in-out infinite; }
-@keyframes roomDrift { from { background-position:48% 50%; } to { background-position:52% 50%; } }
 @keyframes grainDrift { from { transform:translate(0,0); } to { transform:translate(42px,36px); } }
 @keyframes companionFloat { 0%,100% { transform:translateY(0) rotate(0); } 50% { transform:translateY(-7px) rotate(-1deg); } }
 @keyframes statusPulse { 0%,100% { filter:brightness(1); } 50% { filter:brightness(1.12); } }
