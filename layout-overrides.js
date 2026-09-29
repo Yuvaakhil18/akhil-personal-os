@@ -1,6 +1,14 @@
 const referenceLayout = document.createElement('style');
 referenceLayout.textContent = `
 @media (min-width: 901px) {
+  .system-bar nav { gap:24px; margin-left:auto; margin-right:28px; }
+  .system-bar nav button { padding:6px 0; }
+  .status { gap:11px; }
+  .status button { border:2px solid var(--ink); background:var(--wine); color:var(--paper); padding:6px 9px; font:9px var(--pixel); }
+  .build-status { font:9px var(--pixel); }
+  .build-status i { display:inline-block; width:7px; height:7px; background:var(--lime); border:2px solid var(--ink); margin-right:3px; }
+  .signal-bars { font:12px var(--pixel); letter-spacing:-3px; }
+  #date { font:9px var(--pixel); }
   .desktop { display:block; position:relative; min-height:calc(100vh - 56px); padding:0; overflow:hidden; }
   .daily { position:absolute; right:3vw; top:20px; width:330px; padding:20px; background:var(--paper); border:3px solid var(--ink); box-shadow:8px 9px 0 var(--ink); z-index:5; }
   .daily h1 { font-size:54px; margin:13px 0 18px; }
